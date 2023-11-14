@@ -6,5 +6,5 @@ var btn = document.getElementById('btn');
 // Add a click event listener to the button
 btn.addEventListener('click', function() {
     // Redirect to another page (replace 'target_page.html' with the actual page URL)
-    window.location.href = 'index.html';
+    window.location.href = 'index2.html';
 });
