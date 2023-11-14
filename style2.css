@@ -1,83 +1,110 @@
-
 /* Set background color */
 body {
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    background-image: url("images/porsche-gt3-rs-2019_a2llaGWUmZqaraWkpJRsa21lrWloZ2U.jpg");
-    background-size: cover;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  /* Set header styles */
-  .header {
-    display:flex;
-    justify-content: space-between;
-    color:#ff3300;
-    padding: 20px;
-    text-align: right;
-    border-bottom: solid 2px #ff6600;
-  }
-  section.content-container.h1 {
-    font-size: 50px;
-    font-weight: 700;
-  }
-  /* Set link styles */
-  a {
-    color: #ff6600;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #00ff08;
-  }
-  
-  /* Set button styles */
-  button {
-    background-color: #ff6600;
-    color: black;
-    border: solid 1px black;
-    
-    padding: 10px 20px;
-    border-radius: 5px;
-    position: relative;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  background-image: url("images/porsche-gt3-rs-2019_a2llaGWUmZqaraWkpJRsa21lrWloZ2U.jpg");
+  background-size: cover;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Set header styles */
+.header {
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.6;
+  justify-content: space-between;
+  color: #ff3300;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+  border-bottom: solid 2px #ff6600;
+}
+
+section.content-container.h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/* Set link styles */
+a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00ff08;
+}
+
+/* Set button styles */
+button {
+  background-color: #ff6600;
+  color: black;
+  border: solid 1px black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+#btn {
+  color: black;
+}
+
+button:hover {
+  background-color: transparent;
+}
+
+/* Set section styles */
+section {
+  border: solid;
+  border-color: #ff6600;
+  background-size: cover;
+  padding: 20px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Set content container styles */
+.content-container {
+  color: black;
+  text-align: left;
+}
+
+/* Set footer styles */
+.footer {
+  background-color: #333;
+  color: rgb(43, 226, 162);
+  padding: 20px;
+  height: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+  body {
+    background-size: contain;
   }
 
-  #btn{
-    color: black;
+  .header {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  button:hover {
-    background-color: transparent;
+
+  button {
+    width: 100%;
   }
-  
-  /* Set section styles */
 
   section {
-    border: solid;
-    border-color: #ff6600;
-    background-size: cover;
-    padding: 20px;
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 10px;
   }
-  
-  /* Set content container styles */
-  .content-container {
-    color:black;
-    text-align: left;
-  }
-
-  /* Set footer styles */
-  .footer {
-    background-color: #333;
-    color: rgb(43, 226, 162);
-    padding: 20px;
-    height: 20px;
-    text-align: center;
-    justify-content: center;
-  } 
+}
